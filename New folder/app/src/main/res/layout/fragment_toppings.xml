@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cofee"
+    tools:context=".fragments.ToppingsFragment">
+
+    <LinearLayout
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+
+
+
+        <EditText
+            android:id="@+id/editName"
+            android:padding="30dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:backgroundTint="#3E2723"
+            android:inputType="textCapWords"
+            android:hint="Enter your Name"
+            android:textColorHint="#fff"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/drinkChosen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp"
+            android:textSize="20sp"
+            android:textColor="#3E2723"
+            android:textStyle="bold"
+            android:text="you Chose:-"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp"
+            android:textSize="20sp"
+            android:textColor="#3E2723"
+            android:textStyle="bold"
+            android:text="@string/Toppings"
+            android:textAllCaps="true" />
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/Whipped_cream_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="@string/notify_me"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@android:color/black"
+                android:text="Whipped cream" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/chocolate_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="@string/notify_me"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="Chocolate"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginBottom="16dp"-->
+        <!--            android:text="quantity"-->
+        <!--            android:textSize="20sp"-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:paddingLeft="20dp"-->
+        <!--            android:fontFamily="sans-serif-condensed"-->
+        <!--            android:textColor="@android:color/black"-->
+        <!--            android:textAllCaps="true" />-->
+
+        <!--        <LinearLayout-->
+        <!--            android:padding="15dp"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:orientation="horizontal">-->
+
+        <!--            <Button-->
+        <!--                android:layout_width="48dp"-->
+        <!--                android:layout_height="48dp"-->
+        <!--                android:background="#BCAAA4"-->
+        <!--                android:onClick="decrement"-->
+        <!--                android:text="-"-->
+
+        <!--                />-->
+
+
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/quantity_text_view"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:paddingLeft="8dp"-->
+        <!--                android:paddingRight="8dp"-->
+        <!--                android:text="2"-->
+        <!--                android:textColor="@android:color/black"-->
+        <!--                android:textSize="16sp" />-->
+
+
+        <!--            <Button-->
+        <!--                android:layout_width="48dp"-->
+        <!--                android:layout_height="48dp"-->
+        <!--                android:onClick="increment"-->
+        <!--                android:background="#BCAAA4"-->
+        <!--                android:text="+"-->
+
+
+        <!--                />-->
+
+        <!--        </LinearLayout>-->
+
+
+
+
+        <Button
+            android:id="@+id/placeOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_background"
+            android:text="order" />
+
+        <!--        <Button-->
+        <!--            android:id="@+id/orderPlace"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="20dp"-->
+        <!--            android:layout_marginEnd="20dp"-->
+        <!--            android:layout_marginTop="16dp"-->
+        <!--            android:onClick="submitOrder"-->
+        <!--            android:textColor="#ffffff"-->
+        <!--            android:background="@drawable/button_background"-->
+        <!--            android:text="Place" />-->
+
+
+
+
+        <!--        <Button-->
+        <!--            android:id="@+id/btn_logout"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="16dp"-->
+        <!--            android:textColor="#ffffff"-->
+        <!--            android:background="@drawable/button_background"-->
+        <!--            android:text="logout" />-->
+
+
+    </LinearLayout>
+
+</ScrollView>

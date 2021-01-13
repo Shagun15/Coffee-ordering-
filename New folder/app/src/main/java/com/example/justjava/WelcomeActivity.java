@@ -7,10 +7,16 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 public class WelcomeActivity extends AppCompatActivity {
 
     Button login_btn;
     Button SignUp_btn;
+
+    FirebaseAuth auth;
+    FirebaseUser firebaseUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +25,18 @@ public class WelcomeActivity extends AppCompatActivity {
 
         login_btn=findViewById(R.id.login_btn);
         SignUp_btn=findViewById(R.id.SignUp_btn);
+
+        auth = FirebaseAuth.getInstance();
+
+
+        firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+
+
+        if(firebaseUser!=null){
+            Intent intent=new Intent(WelcomeActivity.this, MainActivity.class);
+            startActivity(intent);
+            finish();
+        }
 
         login_btn.setOnClickListener(new View.OnClickListener() {
             @Override

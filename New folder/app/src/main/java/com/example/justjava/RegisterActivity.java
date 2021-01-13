@@ -92,7 +92,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                             ref = FirebaseDatabase.getInstance().getReference().child("Users").child(userId);
 
-                            UserDetails user=new UserDetails(userId,name,email);
+                            UserDetails user=new UserDetails(name,email,userId);
 
                             ref.setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override

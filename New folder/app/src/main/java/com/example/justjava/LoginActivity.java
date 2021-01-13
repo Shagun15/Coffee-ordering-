@@ -35,18 +35,14 @@ public class LoginActivity extends AppCompatActivity {
         email_signIn = findViewById(R.id.email_signIn);
         password_signIn = findViewById(R.id.password_signIn);
         login_btn = findViewById(R.id.login_btn);
-        signUp_link = findViewById(R.id.password_signIn);
+        signUp_link = findViewById(R.id.signUp_link);
 
         auth = FirebaseAuth.getInstance();
 
 
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
 
-        if(firebaseUser!=null){
-            Intent intent=new Intent(LoginActivity.this, MainActivity.class);
-            startActivity(intent);
-            finish();
-        }
+
 //        if(firebaseUser!=null){
 //
 //        }

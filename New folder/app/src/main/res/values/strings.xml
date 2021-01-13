@@ -2,7 +2,9 @@
     <string name="app_name">justjava</string>
     <string name="notify_me" />
     <string name="album_description" />
-    <string name="Toppings">Toppings</string>
+    <string name="Toppings"> Add your favourate Toppings!!</string>
     <string name="Thank_you">Thank you!</string>
     <string name="order_summary_name">Name:  <xliff:g example="Shagun" id="name">%s</xliff:g> </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

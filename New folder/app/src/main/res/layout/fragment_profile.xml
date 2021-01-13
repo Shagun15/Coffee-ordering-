@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.ProfileFragment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="your Profile"
+        android:textSize="45sp"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/userName"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/userEmail"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="userEmail" />
+
+        <TextView
+            android:id="@+id/Email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Email" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/SignOut"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="SignOut" />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
